@@ -1,0 +1,1 @@
+g++ main.cpp businessobject/BusinessObject.cpp businessobject/Book.cpp businessobject/Member.cpp businessobject/BorrowReturn.cpp dataaccess/BookData.cpp dataaccess/BorrowReturnData.cpp dataaccess/MemberData.cpp ui/Input.cpp ui/MyUI.cpp -o main.exe

@@ -9,21 +9,7 @@ void MyUI::Display(DataBusinessObject* databusinessobject) {
 }
 
 void MyUI::ListBooksBorrowedMost() {
-    BorrowReturnData brd = borrowreturndata;
-    map<string, int> count;
-    int temp;
-    for (int i = 0; i < brd.GetSize(); i++) {
-        temp = 0;
-        for (int j = 0; j < brd.GetSize(); j++) {
-            if (brd.Get(j).GetBookID() == brd.Get(i).GetBookID()) {
-                ++temp;
-            }
-        }
-        count[brd.Get(i).GetBorrowReturnName()] = temp;
-    }
-    for (int i = 0; i < brd.GetSize(); i++) {
-        cout << count[brd.Get(i).GetBorrowReturnName()] << " ";
-    }
+    
 }
 
 void MyUI::ChooseSentence() {
